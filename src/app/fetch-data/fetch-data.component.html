@@ -1,20 +1,24 @@
-<h2>This component demonstrates fetching data from the server.</h2>
 
-<table class='table table-striped' aria-labelledby="tableLabel">
-  <thead>
-    <tr>
-      <th class='table-heading'>Title</th>
-      <th class='table-heading'>Genre</th>
-      <th class='table-heading'>Score</th>
-      <th class='table-heading'># of votes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class='table-entry'>Breaking Bad</td>
-      <td class='table-entry'>Drama</td>
-      <td class='table-entry'>9.5</td>
-      <td class='table-entry'>1,727,694</td>
-    </tr>
-  </tbody>
-</table>
+<p *ngIf="!data?.length"><em>Loading...</em></p>
+
+<div class="table-box">
+  <table class='table table-striped' aria-labelledby="tableLabel">
+    <thead>
+      <tr>
+        <th class='table-heading'>Title</th>
+        <th class='table-heading'>Genre</th>
+        <th class='table-heading'>Score</th>
+        <th class='table-heading'>Votes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let info of data">
+        <td class='table-title'>{{ info.TITLE }}</td>
+        <td class='table-entry'>{{ info.GENRE }}</td>
+        <td class='table-entry'>{{ info.SCORE }}</td>
+        <td class='table-entry'>{{ info.VOTES }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

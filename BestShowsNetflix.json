@@ -1,0 +1,82 @@
+[
+ {
+  "TITLE": "Breaking Bad",
+  "YEAR": 2008,
+  "SCORE": 9.5,
+  "VOTES": 1727694,
+  "DURATION": 48,
+  "SEASONS": 5,
+  "GENRE": "drama",
+  "PRODUCTION": "US"
+ },
+ {
+  "TITLE": "Avatar: The Last Airbender",
+  "YEAR": 2005,
+  "SCORE": 9.3,
+  "VOTES": 297336,
+  "DURATION": 24,
+  "SEASONS": 3,
+  "GENRE": "scifi",
+  "PRODUCTION": "US"
+ },
+ {
+  "TITLE": "Our Planet",
+  "YEAR": 2019,
+  "SCORE": 9.3,
+  "VOTES": 41386,
+  "DURATION": 50,
+  "SEASONS": 1,
+  "GENRE": "documentary",
+  "PRODUCTION": "GB"
+ },
+ {
+  "TITLE": "Kota Factory",
+  "YEAR": 2019,
+  "SCORE": 9.3,
+  "VOTES": 66985,
+  "DURATION": 42,
+  "SEASONS": 2,
+  "GENRE": "drama",
+  "PRODUCTION": "IN"
+ },
+ {
+  "TITLE": "The Last Dance",
+  "YEAR": 2020,
+  "SCORE": 9.1,
+  "VOTES": 108321,
+  "DURATION": 50,
+  "SEASONS": 1,
+  "GENRE": "documentary",
+  "PRODUCTION": "US"
+ },
+ {
+  "TITLE": "Arcane",
+  "YEAR": 2021,
+  "SCORE": 9.1,
+  "VOTES": 175412,
+  "DURATION": 41,
+  "SEASONS": 1,
+  "GENRE": "action",
+  "PRODUCTION": "US"
+ },
+ {
+  "TITLE": "Attack on Titan",
+  "YEAR": 2013,
+  "SCORE": 9,
+  "VOTES": 325381,
+  "DURATION": 24,
+  "SEASONS": 4,
+  "GENRE": "scifi",
+  "PRODUCTION": "JP"
+ },
+ {
+  "TITLE": "Hunter x Hunter",
+  "YEAR": 2011,
+  "SCORE": 9,
+  "VOTES": 87857,
+  "DURATION": 23,
+  "SEASONS": 3,
+  "GENRE": "drama",
+  "PRODUCTION": "JP"
+ }
+]

@@ -1,4 +1,23 @@
 .table-heading, .table-entry {
-  width: 100px; 
+  width: 150px; 
   text-align: end;
+}
+
+.table-heading {
+  font-size: 30px;
+}
+
+.table-entry, .table-title {
+  font-size: 20px;
+}
+
+.table-title {
+  text-align: left;
+  width: 300px;
+}
+
+.table-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
 }
