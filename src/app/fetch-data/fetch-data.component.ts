@@ -59,7 +59,7 @@ export class FetchDataComponent {
   ];
 
   // constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
-  //   http.get<NetflixData[]>(baseUrl + 'weatherforecast').subscribe(result => {
+  //   http.get<NetflixData[]>(baseUrl + 'netflixdata').subscribe(result => {
   //     this.data = result;
   //   }, error => console.error(error));
   // }
