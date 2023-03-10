@@ -28,7 +28,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {provide: 'BASE_URL', useValue: 'https://localhost:7066/'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
