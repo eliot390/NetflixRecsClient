@@ -10,14 +10,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { HttpClientModule } from '@angular/common/http';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { GenresComponent } from './genres/genres.component';
+import { LoginComponent } from './auth/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AuthInterceptor } from './auth/auth.interceptor';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FetchDataComponent,
-    NavBarComponent
+    NavBarComponent,
+    GenresComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -26,11 +34,16 @@ import { HttpClientModule } from '@angular/common/http';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
-  providers: [
-    {provide: 'BASE_URL', useValue: 'https://localhost:7066/'}
-  ],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

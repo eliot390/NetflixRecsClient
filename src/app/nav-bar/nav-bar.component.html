@@ -6,6 +6,9 @@
     <button mat-icon-button [routerLink]="['/fetch-data']">
       <mat-icon>movie_filter</mat-icon>
     </button>
-    <span>Netflix Recs</span>      
+    <span>Netflix Recs</span>    
+    <span class="separator"></span>
+    <a mat-flat-button *ngIf="!isLoggedIn" color="primary" [routerLink]="['/login']">Login</a>
+    <a mat-flat-button *ngIf="isLoggedIn" color="primary" (click)="onLogout()">Logout</a>
   </mat-toolbar>
 </header>
