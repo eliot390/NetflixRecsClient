@@ -9,7 +9,7 @@ import { Genre } from './genre';
   styleUrls: ['./genres.component.css']
 })
 export class GenresComponent {
-  public genres!:Genre[];
+  public genres!: Genre[];
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {

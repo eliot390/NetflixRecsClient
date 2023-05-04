@@ -1,1 +1,16 @@
-<p>genres works!</p>
+<h1>Genres</h1>
+<p>Here are the genres</p>
+<table class="table table-striped" aria-labelledby="tableLabel" [hidden]="!genres">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Genre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let genre of genres">
+      <td><a [routerLink]="['/genre', genre.id]">{{genre.id}}</a></td>
+      <td>{{ genre.genre}}</td>
+    </tr>
+  </tbody>
+</table>
