@@ -1,16 +1,18 @@
-<h1>Genres</h1>
-<p>Here are the genres</p>
-<table class="table table-striped" aria-labelledby="tableLabel" [hidden]="!genres">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Genre</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let genre of genres">
-      <td><a [routerLink]="['/genre', genre.id]">{{genre.id}}</a></td>
-      <td>{{ genre.genre}}</td>
-    </tr>
-  </tbody>
-</table>
+<p *ngIf="!genres?.length"><em>Loading...</em></p>
+<div class="table-div">
+  <h1>Top Ranked Genres</h1>
+  <table id="table-main" aria-labelledby="tableLabel" [hidden]="!genres">
+    <!-- <thead>
+      <tr>
+        <th class='table-heading'>ID</th>
+        <th class='table-heading'>Genre</th>
+      </tr>
+    </thead> -->
+    <tbody class="tbod">
+      <tr class="test" *ngFor="let genre of genres">
+        <td class='table-title'><a id="viewlink" [routerLink]="['/genre', genre.id]">view</a></td>
+        <td class='table-title'>{{ genre.genre1}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

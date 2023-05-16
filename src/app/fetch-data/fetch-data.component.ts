@@ -10,10 +10,10 @@ import { environment } from '../environment/environment';
 export class FetchDataComponent {
   public data: NetflixData[] = [];
 
-  constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
+  constructor(http: HttpClient) {
     http.get<NetflixData[]>(environment.baseUrl + 'NetflixData').subscribe(result => {
       this.data = result;
-    }, error => console.error(error));
+    }, error => console.error());
   }
 }
 
