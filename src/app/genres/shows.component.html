@@ -1,12 +1,25 @@
-<h1>Shows</h1>
-<div class="table-div">  
+<p *ngIf="!shows?.length"><em>Loading...</em></p>
+<div class="table-div">
   <table id="table-main" aria-labelledby="tableLabel" [hidden]="!shows">
+    <thead>
+      <tr>
+        <th class='table-heading'>Title</th>
+        <th class='table-heading-data'>Score</th>
+        <th class='table-heading-data'>Votes</th>
+      </tr>
+    </thead>
+    <br/>
     <tbody class="tbod">
-      <tr class="test" *ngFor="let show of shows">
+      <tr id="trow" *ngFor="let show of shows">
         <td class='table-title'>{{show.title}}</td>
-        <td class='table-title'>{{show.score}}</td>
-        <td class='table-title'>{{show.votes}}</td>
+        <td class='table-data'>{{show.score}}</td>
+        <td class='table-data'>{{show.votes}}</td>
       </tr>
     </tbody>
   </table>
+  <br/>
+  <div>
+    <button mat-button id="edit-btn" [routerLink]="['/genres']">Add Show</button>
+    <button mat-button id="back-btn" [routerLink]="['/genres']">Back</button>
+  </div>  
 </div>

@@ -6,4 +6,5 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: rgb(47, 47, 47);
   color: white;
+  background-image: url("lyav.png");  
 }

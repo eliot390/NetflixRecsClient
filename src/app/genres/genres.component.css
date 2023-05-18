@@ -1,18 +1,12 @@
-/* .table-heading, .table-entry {
-  width: 150px;  
-} */
-
-/* .table-title {
-  text-align: right;
-  width: auto;
-} */
-
 .table-div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 5em;
+}
+#title {
+  font-size: 3em;
 }
 
 #table-main {
@@ -23,8 +17,8 @@
   text-align: end;
 }
 
-.table-entry, .table-title {
-  font-size: 20px;
+.table-title {
+  font-size: 25px;
   padding-bottom: 10px;
 }
 
@@ -40,12 +34,15 @@ a:link {
   padding: 1px 5px 1px 5px;
 }
 
-#viewlink:hover {
-  background: rgb(255, 210, 218);
+#trow:hover {
+  color: rgb(233, 25, 10);
 }
 
-/* .test {
-  display: flex;
-  justify-content: space-between;
-} */
+#view-btn {
+  color: white;
+  background-color: rgb(244,67,54);
+}
 
+#view-btn:hover {
+  background-color: rgb(193, 24, 12);
+}
