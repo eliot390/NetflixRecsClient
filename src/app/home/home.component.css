@@ -8,12 +8,46 @@
 
 #welcome {
   font-size: 75px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #info {
-  margin-top: 30px;
-  width: 25em;
-  font-size: 30px;
+  margin-top: 1em;
+  width: 60%;
+  font-size: 20px;
   text-align: center;
   line-height: 1.0;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
+  width: 70em;
+  height: 25em;  
+}
+
+.tech {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+}
+
+#tech {
+  font-size: 7em;
+  margin-left: 20px;
+}
+
+#techL {
+  font-size: 4em;
+  margin-left: 20px;
 }

@@ -1,20 +1,15 @@
 <p *ngIf="!genres?.length"><em>Loading...</em></p>
-<div class="table-div">
-  <p id="title">Top Ranked Genres</p>
-  <br/>
-  <table id="table-main" aria-labelledby="tableLabel" [hidden]="!genres">
-    <!-- <thead>
-      <tr>
-        <th class='table-heading'>ID</th>
-        <th class='table-heading'>Genre</th>
-      </tr>
-    </thead> -->
-    <tbody class="tbod">
-      <tr id="trow" *ngFor="let genre of genres">
-        <!-- <td class='table-title'><a id="viewlink" [routerLink]="['/shows', genre.id]">view</a></td> -->
-        <td class='table-title'><button mat-button id="view-btn" [routerLink]="['/shows', genre.id]">View</button></td>
-        <td class='table-title'>{{ genre.genre1}}</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="modal">
+  <div class="table-div">
+    <p id="title">Top Ranked Genres</p>
+    <br/>
+    <table id="table-main" aria-labelledby="tableLabel" [hidden]="!genres">
+      <tbody class="tbod">
+        <tr id="trow" *ngFor="let genre of genres">
+          <td class='table-title'><button mat-button id="view-btn" [routerLink]="['/shows', genre.id]">View</button></td>
+          <td class='table-title'>{{ genre.genre1}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

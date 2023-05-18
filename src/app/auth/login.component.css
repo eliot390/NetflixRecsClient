@@ -1,18 +1,23 @@
-#login {
-  font-size: 4em;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-.login {
+.modal {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
   background-color: rgba(0, 0, 0, 0.8);
+  border-color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10em;
   width: 30em;
   height: 30em;
+}
+
+#login {
+  font-size: 4em;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 #login-form {
