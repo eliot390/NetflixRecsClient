@@ -1,4 +1,4 @@
-export interface Genre {
+export interface Shows {
   id: number;
   genre1: string;
   title: string;

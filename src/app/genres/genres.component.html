@@ -10,7 +10,7 @@
     </thead> -->
     <tbody class="tbod">
       <tr class="test" *ngFor="let genre of genres">
-        <td class='table-title'><a id="viewlink" [routerLink]="['/genre', genre.id]">view</a></td>
+        <td class='table-title'><a id="viewlink" [routerLink]="['/shows', genre.id]">{{genre.id}}</a></td>
         <td class='table-title'>{{ genre.genre1}}</td>
       </tr>
     </tbody>

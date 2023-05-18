@@ -17,6 +17,7 @@ import { GenresComponent } from './genres/genres.component';
 import { LoginComponent } from './auth/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthInterceptor } from './auth/auth.interceptor';
+import { ShowsComponent } from './genres/shows.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AuthInterceptor } from './auth/auth.interceptor';
     FetchDataComponent,
     NavBarComponent,
     GenresComponent,
-    LoginComponent
+    LoginComponent,
+    ShowsComponent,
   ],
   imports: [
     BrowserModule,

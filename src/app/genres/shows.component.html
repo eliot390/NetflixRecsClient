@@ -1,0 +1,12 @@
+<h1>Shows</h1>
+<div class="table-div">  
+  <table id="table-main" aria-labelledby="tableLabel" [hidden]="!shows">
+    <tbody class="tbod">
+      <tr class="test" *ngFor="let show of shows">
+        <td class='table-title'>{{show.title}}</td>
+        <td class='table-title'>{{show.score}}</td>
+        <td class='table-title'>{{show.votes}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
