@@ -1,0 +1,38 @@
+<div class="modal">
+  <div class="show-edit">
+    <h1>Add Show</h1>
+    <p *ngIf="this.id && !show"><em>Loading...</em></p>
+    <form class="show-edit" [formGroup]="form" (ngSubmit)="onSubmit()">
+      
+      <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title" placeholder="Type show name">
+      </mat-form-field>
+      
+      <mat-form-field>
+        <mat-label>
+          Score
+        </mat-label>
+        <input matInput formControlName="score" placeholder="Insert show score">
+      </mat-form-field>
+      
+      <mat-form-field>
+        <mat-label>
+          Votes
+        </mat-label>
+        <input matInput formControlName="votes" placeholder="Insert show votes">
+      </mat-form-field>
+
+      <div>
+        <button mat-flat-button color="primary"
+                type="submit">
+          {{ this.id ? "Add" : "Add" }}
+        </button>
+        <button mat-flat-button color="secondary" [routerLink]="['/genres']">
+          Cancel
+        </button>
+      </div>
+    </form>
+  </div>
+  
+</div>

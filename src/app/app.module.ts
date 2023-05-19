@@ -18,6 +18,7 @@ import { LoginComponent } from './auth/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthInterceptor } from './auth/auth.interceptor';
 import { ShowsComponent } from './genres/shows.component';
+import { AddShowComponent } from './genres/add-show/add-show.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ShowsComponent } from './genres/shows.component';
     GenresComponent,
     LoginComponent,
     ShowsComponent,
+    AddShowComponent,
   ],
   imports: [
     BrowserModule,
